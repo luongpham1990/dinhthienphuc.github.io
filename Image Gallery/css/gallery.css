@@ -8,6 +8,14 @@ body {
 	padding: 0;
 }
 
+h3 {
+	text-transform: uppercase;
+	font-style: italic;
+	font-size: 30px;
+	color: green;
+	text-align: center;
+}
+
 a:link {
 	color: blue;
 }
