@@ -20,3 +20,22 @@ img.setCenter {
 p.label {
 	text-align: center;
 }
+
+p {
+	text-indent: 30px;
+}
+
+a:link {
+	color: blue;
+}
+
+a:active {
+	color: red;
+}
+
+a:visited {
+	color: grey;
+}
+a:hover {
+	color: green;
+}
