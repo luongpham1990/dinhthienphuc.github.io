@@ -1,0 +1,19 @@
+.box {
+	/*margin-right: 5px;*/
+	border: 1px solid #dddddd;
+	padding: 15px;
+	float: left;
+	width: 33.33333333%;
+}
+
+.info {
+	border-color: #76a75a;
+}
+
+.contact {
+	border-color: #76a75a;
+}
+
+.company {
+	border-color: #76a75a;
+}
