@@ -1,6 +1,5 @@
 img {
-	width: 300px;
-	align: center;
+	max-width: 300px;
 }
 
 h1 {
@@ -10,4 +9,10 @@ h1 {
 
 h2, h4 {
 	text-align: center;
+}
+
+img.setCenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
