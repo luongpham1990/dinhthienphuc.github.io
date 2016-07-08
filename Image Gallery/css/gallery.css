@@ -1,0 +1,51 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #E5E5E5;
+	margin: 0;
+	padding: 0;
+}
+
+a:link {
+	color: blue;
+}
+
+a:visited {
+	color: grey;
+}
+
+a:hover {
+	color: green;
+}
+
+.wrap {
+	max-width: 1000px;
+	margin: auto;
+}
+
+.menu {
+	font-style: italic;
+	font-size: 25px;
+	text-align: right;
+	padding-right: 20px;
+}
+
+.photo {	
+	border: 1px solid #dddddd;
+	padding: 2px;
+	float: left;
+	width: 33.33333333%;
+	height: 33.33333333%;
+}
+
+.photo:hover {
+	border-radius: 20px
+}
+
+
+#banner {
+	max-width: 100%;
+}
+
