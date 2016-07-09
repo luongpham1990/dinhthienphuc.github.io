@@ -26,6 +26,7 @@ h3 {
 	font-size: 30px;
 	color: green;
 	text-align: right;
+	margin-right: 35px;
 }
 
 a:link {
@@ -33,21 +34,19 @@ a:link {
 }
 
 a:visited {
-	color: black;
-}
-
-a:hover {
 	color: green;
 }
 
+a:hover {
+	color: grey;
+}
+
 .menu {
-	border: 2px solid green;
-	background-color: #98FB98;
 	position: absolute;
+	max-width: 18%;
 	font-style: italic;
 	font-weight: bold;
 	font-size: 25px;
-	margin-left: 15px;
 	margin-top: 40px;
 	padding: 25px;
 	
@@ -74,10 +73,14 @@ a:hover {
 
 #back-to-top {
 	position: fixed;
-	max-height: 70px;
-	max-width: 70px;
+	max-height: 75px;
+	max-width: 75px;
 	text-align: right;
 	padding-right: 10px;
 	right: 30px;
 	bottom: 30px;
+}
+
+#footer {
+	text-align: center;
 }
