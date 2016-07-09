@@ -72,12 +72,6 @@ a:hover {
 	border-radius: 50%;
 }
 
-#footer {
-	font-size: 17px;
-	text-align: center;
-	font-style: italic;
-}
-
 #back-to-top {
 	position: fixed;
 	max-height: 70px;
