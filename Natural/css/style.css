@@ -14,13 +14,13 @@ body {
 }
 
 #banner {
-	position: relative;
 	border: 1px solid green;
 	max-width: 100%;
 }
 
 
 h3 {
+	position: relative;
 	text-transform: uppercase;
 	font-style: italic;
 	font-size: 30px;
@@ -43,6 +43,8 @@ a:hover {
 
 .menu {
 	position: absolute;
+	background-color: #ffffff;
+	border: 1px solid green;
 	max-width: 18%;
 	font-style: italic;
 	font-weight: bold;
@@ -59,15 +61,14 @@ a:hover {
 
 .menu > a:first-child {
 	position: absolute;
-	float: left;
-	padding-left: 10px;
-	top: -240px;
-	left: 30px;
+	margin-left: 25%;
+	margin-top: -170%;
+	border-radius: 50%;
 }
 
 .menu > a:first-child > img {
 	border: 3px solid white;
-	max-width: 140px;
+	max-width: 100%;
 	border-radius: 50%;
 }
 
