@@ -40,7 +40,8 @@ a:hover {
 	padding-right: 20px;
 }
 
-.photo {	
+.photo {
+	display: block;	
 	border: 1px solid #dddddd;
 	padding: 2px;
 	float: left;
@@ -56,4 +57,3 @@ a:hover {
 #banner {
 	max-width: 100%;
 }
-
