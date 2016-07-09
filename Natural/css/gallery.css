@@ -1,14 +1,9 @@
 .photo {
 	display: block;
-	border: 1px solid #dddddd;
-	padding: 2px;
+	padding-left: 20%;
 	float: left;
 	width: 33.33333333%;
 	height: 33.33333333%;
-}
-
-.photo:hover {
-	border-radius: 20px
 }
 
 .photo > img:first-child {
@@ -26,17 +21,17 @@
 
 .paragraph {
 	display: block;
-	float: right;
-	border: 2px solid #dddddd;
-	width: 80%;
 	max-height: 300px;
+	padding-bottom: 5px;
 }
 
-p {
+p {	
+	display: block;
 	font-size: 19px;
 	font-style: italic;
 	text-indent: 15px;
 	padding: 8px;
+	padding-left: 12px;
 	text-align: justify;
 }
 
