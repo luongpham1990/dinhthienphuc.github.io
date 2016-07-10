@@ -1,0 +1,137 @@
+* { box-sizing: border-box; }
+
+body {
+	background-color: #E5E5E5;
+	margin: 0;
+	padding: 0;
+}
+
+/*slideColor and fade are the same purpose.*/
+@keyframes slideColor {
+	0% { color: #CCFFCC; }
+	10% { color: #E5FFCC; }
+	20% { color: #FFFFCC; }
+	30% { color: #FFE5CC; }
+	40% { color: #FFCCCC; }
+	50% { color: #FF9999; }
+	60% { color: #FF6666; }
+	70% { color: #FF3333; }
+	80% { color: #FF0000; }
+	90% { color: #CC0000; }
+	100% { color: #990000; }
+}
+
+@keyframes fade {
+	0% { opacity: 0; }
+	20% { opacity: 0.2; }
+	40% { opacity: 0.4; }
+	60% { opacity: 0.6; }
+	80% { opacity: 0.8; }
+	100% { opacity: 1; }
+
+}
+
+@keyframes flash {
+	0% { transform: translateX(20%); opacity: 0; }
+	6% { transform: translateX(16%); opacity: 0.2; }
+	12% { transform: translateX(12%); opacity: 0.4; }
+	18% { transform: translateX(8%); opacity: 0.6; }
+	24% { transform: translateX(4%); opacity: 0.8; }
+	30% { transform: translateX(0%); opacity: 1; }
+	70% { transform: translateX(0%); opacity: 1; }
+	77.5% { transform: translateX(-10%); opacity: 0.75; }
+	85% { transform: translateX(-20%); opacity: 0.5; }
+	92.5% { transform: translateX(-30%); opacity: 0.25; }
+	100% { transform: translateX(-40%); opacity: 0; }
+}
+
+.wrap {
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+#banner {
+	max-width: 100%;
+	border: 1px solid grey;
+}
+
+.menu {
+	border: 1px solid #DF0029;
+	font-weight: bold;
+	font-style: italic;
+	margin: 15px 25px 15px 25px;
+	background-color: #CCFFCC;
+	letter-spacing: 0.3em;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.menu > h1 {
+	/*use with 'slideColor*/
+	/*color: #E54646;
+	animation: slideColor 5s ease infinite alternate;*/
+	text-decoration: none;
+	/*use with 'fade'*/
+	color: #2D65B9;
+	animation: fade 5s linear infinite alternate;
+}
+
+.menu > h1:hover {
+	color: #00AE72;
+	cursor: pointer;
+	text-transform: uppercase;
+	transform: scale(1.2);
+}
+
+h2 {
+	font-style: italic;
+	color: #606060;
+	text-align: right;
+	animation: flash 5s linear infinite;
+}
+
+.col {
+	max-width: 45%;
+	margin: 50px 2.5% 20px 2.5%;
+	border: 1px solid grey;
+	border-radius: 5%;
+	float: left;
+	transition: all 0.7s linear;
+}
+
+.col img {
+	display: block;
+	max-width: 100%;
+	padding: 3px;
+	border-radius: 5%;
+	float: left;
+	cursor: pointer;
+	transition: all 0.7s linear;
+}
+
+.col img:hover {
+	opacity: 0.7;
+}
+
+.col:hover {
+	transform: translate(0, -5px);
+	box-shadow: 7px 14px 13px 0px rgba(50, 50, 50, 0.71);
+}
+
+#footer {
+	text-align: center;
+	font-size: 18px;
+	font-style: italic;
+}
+
+#backontop {
+	position: fixed;
+	width: 80px;
+	right: 30px;
+	bottom: 30px;
+}
+
+#backontop:hover {
+	transform: scale(1.4);
+}
