@@ -1,0 +1,43 @@
+/*chèn thêm 2 ảnh khuyến mãi*/
+
+@keyframes change {
+	from { color: white; transform: scale(1);}
+	to { color: #48FF2C; transform: scale(1.2);}
+}
+
+.content #sale {
+	text-transform: uppercase;
+	font-size: 30px;
+	text-align: center;
+	font-style: italic;
+	animation: change 2s linear infinite alternate;
+}
+
+.content p {
+	color: white;
+	font-size: 25px;
+	font-style: italic;
+	padding: auto 20px auto 20px;
+}
+
+.content > img {
+	float: left;
+	max-width: 45%;
+	margin: 2.25%;
+	display: block;
+	border: 2px solid white;
+	border-radius: 10px;
+	transition: all 0.7s linear;
+}
+
+.content > img:hover {
+	cursor: pointer;
+	opacity: 0.8;
+	transform: translateY(-5px);
+}
+
+.content > img:last-child {
+	max-width: 80%;
+	float: none;
+	margin: 100px auto 20px auto;
+}

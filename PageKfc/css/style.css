@@ -1,0 +1,92 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url("http://www.myfreetextures.com/wp-content/uploads/2014/10/texture-seamless-wood-4.jpg");
+}
+
+a {
+	color: white;
+}
+
+#wrap {
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+#banner {
+	max-width: 100%;
+	margin: auto;
+}
+
+#banner > img {
+	max-width: 99%;
+	border: 2px solid white;
+}
+
+.main-content div:first-child {
+	max-width: 100%;
+}
+
+@keyframes slide {
+	from { transform: translateX(-110%); }
+	to { transform: translateX(115%); }
+}
+
+.main-content #strike {
+	animation: slide 20s linear infinite;
+}
+
+.menu {
+	list-style-type: none;
+}
+
+.menu > li {
+	color: white;
+	float: left;
+	font-size: 22px;
+	font-style: italic;
+	padding: 10px 10px 10px 10px;
+	text-decoration: underline;
+}
+
+.menu > li {
+	float: right;
+}
+
+.menu .box {
+	border: 1px solid white;
+	border-radius: 3%;
+	padding: 10px;
+}
+
+.menu > li > ul {
+	position: absolute;
+	display: block;
+	z-index: 1;
+	list-style-type: none;
+	display: none;
+
+}
+
+.menu > li:hover > ul {
+	display: block;
+}
+
+#footer > h3 {
+	font-style: italic;
+	color: white;
+	text-align: center;
+}
+
+#back-on-top {
+	max-width: 60px;
+	position: fixed;
+	right: 40px;
+	bottom: 40px;
+}
+
+#back-on-top:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+}

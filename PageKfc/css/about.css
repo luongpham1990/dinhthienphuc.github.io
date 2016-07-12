@@ -1,0 +1,27 @@
+p {
+	text-indent: 20px;
+	color: white;
+	font-size: 18px;
+	font-style: italic;
+	text-align: justify;
+	margin: 15px;
+}
+
+.content div {
+	max-width: 70%;
+	margin: auto;
+}
+
+.content img {
+	transition: all 0.7s linear;
+}
+
+.content img:hover {
+	transform: scale(1.05);
+	opacity: 0.7;
+}
+
+.content div:last-child {
+	color: white;
+	font-size: 18px;
+}
