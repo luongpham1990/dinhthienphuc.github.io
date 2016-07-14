@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM</title>
+	<!-- <script type="text/javascript" src="document-object-model.js"></script> -->
+	<style>
+		body {
+			border: 2px solid grey;
+		}
+		p {
+			text-indent: 20px;
+			text-align: justify;
+			padding: 10px;
+			font-size: 15px;
+		}
+		h1 {
+			text-align: center;
+		}
+	</style>
+	
+</head>
+<body>
+	<div>
+		<h1>Document Object Model</h1>
+		<div>
+			<p id="p1">Paragraph 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce odio ipsum, egestas non sem in, auctor auctor nulla. Aliquam ac vestibulum justo. Pellentesque quis tellus vehicula, vehicula nibh ut, interdum est. Integer dictum fermentum ipsum ultrices auctor. Nulla convallis nulla ut rutrum accumsan. Sed eleifend nulla quis mi lobortis, sed varius metus rhoncus. Phasellus ullamcorper felis libero, dignissim vulputate ante maximus ut. Proin lobortis nec risus non bibendum. Donec felis nisl, rhoncus auctor ullamcorper sed, scelerisque vel urna. Pellentesque eu risus turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent consectetur ullamcorper nisl, et interdum magna commodo vitae. Aenean pellentesque ligula at suscipit suscipit. Pellentesque eu fringilla ante, mollis gravida tellus. Donec in ultricies libero.</p>
+		</div>
+
+		<div>
+			<p id="p2">Paragraph 2: Praesent urna nisi, auctor vel tempor sit amet, dictum id lorem. Morbi ultricies enim non tellus varius semper. Cras mi lorem, tempor et tincidunt condimentum, consectetur sed libero. Vestibulum id aliquam nisi, viverra pharetra metus. Nulla non turpis posuere, fringilla massa eget, fermentum lorem. Integer tincidunt nunc nec felis mollis commodo. Sed imperdiet lacinia iaculis. Curabitur rutrum metus a rhoncus pretium. Suspendisse consectetur tellus vel lectus pulvinar iaculis. Aenean nulla eros, vehicula eget elit vel, rhoncus sagittis lacus. Suspendisse sed lacinia orci, quis pellentesque purus. Aliquam sit amet nisl nec eros rutrum tincidunt. Curabitur blandit vehicula neque a sodales. Fusce et nunc vulputate, malesuada mi sit amet, fringilla risus.</p>
+		</div>
+		
+		<div>
+			<p id="p3">Paragraph 3: Praesent in ipsum tempor, blandit lorem quis, mollis turpis. Quisque pretium, felis ultrices pellentesque viverra, orci nunc elementum diam, a porttitor dui ipsum sit amet justo. In vel posuere lacus, quis tempus odio. Suspendisse feugiat hendrerit sollicitudin. Vestibulum dignissim elit dignissim porttitor bibendum. Aenean et maximus nisi, aliquam tempor orci. Ut volutpat rhoncus imperdiet. Nunc finibus, mi quis mollis feugiat, magna diam venenatis nunc, non laoreet erat sem at neque. Vestibulum ultricies libero non enim blandit commodo.</p>
+		</div>
+	</div>
+	<script>
+		function changeFontSize(x) {
+			var para = document.getElementsByTagName("p");
+			for(var i = 0; i < para.length; i++) {
+				para[i].style.fontSize = x + "px";
+			}
+			return x;
+		}
+
+		function increaseFontSize(id) {
+			var para = document.getElementById(id);
+			var size = parseInt(para.style.fontSize);
+			var incSize = size + 1;
+			
+			if(incSize <= 30) {
+				para.style.fontSize = incSize + "px";
+			}
+			else return "Stop because size is greater than 10"
+			return incSize;
+	    }
+
+		function decreaseFontSize(id) {
+			var para = document.getElementById(id)
+			var size = parseInt(para.style.fontSize);
+			var decSize = size - 1;
+			;
+			if(decSize >= 10) {
+				para.style.fontSize = decSize + "px";
+			}
+			else return "Stop because size is less than 10";
+			return decSize;
+		}
+
+		function changeColor() {
+			var para = document.getElementsByTagName("p");
+			var arr = ["blue", "yellow", "red"];
+			for(var i = 0; i < para.length; i++)
+				para[i].style.color = arr[i];
+		}
+
+		function changeBgColor(color) {
+			var ground = document.body;
+			ground.style.backgroundColor = color;
+		}
+
+		function copyContent(id1, id2) {
+			var para2 = document.getElementById(id2).innerHTML;
+			document.getElementById(id1).innerHTML = para2;
+		}
+	</script>
+</body>
+</html>
