@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="cal.css">
+</head>
+<body>
+	<div><h1>CALCULATOR</h1></div>
+	<div id="wrap">
+		<div id="field"><input type="text" id="in"></div>
+		<div id="button">
+			<div class="box">
+				<button onclick="press(this)" value="&radic;" id="radic">&radic;</button>
+				<button onclick="press(this)" id="ac">AC</button>		
+			</div>
+			
+			<div class="box">
+				<button onclick="press(this)" value="^2">x<sup>2</sup></button>						
+				<button onclick="press(this)" value="!">x!</button>		
+				<button onclick="press(this)" value="%">%</button>		
+				<button onclick="press(this)" value="*">*</button>	
+			</div>
+
+			<div class="box">
+				<button onclick="press(this)" value="7">7</button>
+				<button onclick="press(this)" value="8">8</button>
+				<button onclick="press(this)" value="9">9</button>
+				<button onclick="press(this)" value="/">/</button>		
+			</div>
+
+			<div class="box">
+				<button onclick="press(this)" value="4">4</button>
+				<button onclick="press(this)" value="5">5</button>
+				<button onclick="press(this)" value="6">6</button>
+				<button onclick="press(this)" value="-">-</button>		
+			</div>
+
+			<div class="box">
+				<button onclick="press(this)" value="1">1</button>
+				<button onclick="press(this)" value="2">2</button>
+				<button onclick="press(this)" value="3">3</button>
+				<button onclick="press(this)" value="+">+</button>
+			</div>
+			
+			<div class="box">
+				<button onclick="press(this)" value="0">0</button>
+				<button onclick="press(this)" value=".">.</button>
+				<button onclick="pressEqual()" id="equal">=</button>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="cal.js"></script>
+</body>
+</html>

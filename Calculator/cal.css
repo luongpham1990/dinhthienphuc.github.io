@@ -1,0 +1,65 @@
+* { box-sizing: border-box; }
+
+#wrap {
+	max-width: 550px;
+	margin: auto;
+	border: 2px solid #E12A2A;
+	border-radius: 10px;
+	background-image: url('http://static1.squarespace.com/static/5489d1cae4b0af844aa0ee7a/t/54ca6b9ae4b088d699ef8660/1422551964613/light-blue-background.jpg?format=1500w');
+}
+
+body {
+	background-image: url('http://broadfinance.com.au/wp-content/uploads/2013/08/background.jpg');
+}
+
+h1, #field, #button {
+	text-align: center;
+}
+
+h1 {
+	color: #A81F1F;
+	font-style: italic;
+}
+
+.box {
+	padding: 10px; 
+}
+
+input {
+	width: 415px;
+	height: 40px;
+	border-radius: 0 0 10px 10px;
+}
+
+button {
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	color: #EF1919;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#field {
+	padding-bottom: 10px;
+}
+
+#button {
+	border-radius: 10px;
+	max-width: 80%;
+	margin: auto;
+}
+
+#ac {
+	width: 310px;
+	height: 30px;
+}
+
+#equal {
+	width: 205px;
+	height: 30px;
+}
+
+sup {
+	font-size: 8px;
+}
