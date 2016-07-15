@@ -1,9 +1,9 @@
 * { box-sizing: border-box; }
 
 #wrap {
-	max-width: 550px;
+	max-width: 415px;
 	margin: auto;
-	border: 2px solid #E12A2A;
+	border: 2px solid grey;
 	border-radius: 10px;
 	background-image: url('http://static1.squarespace.com/static/5489d1cae4b0af844aa0ee7a/t/54ca6b9ae4b088d699ef8660/1422551964613/light-blue-background.jpg?format=1500w');
 }
@@ -17,7 +17,7 @@ h1, #field, #button {
 }
 
 h1 {
-	color: #A81F1F;
+	color: #D52424;
 	font-style: italic;
 }
 
@@ -26,7 +26,7 @@ h1 {
 }
 
 input {
-	width: 415px;
+	width: 315px;
 	height: 40px;
 	border-radius: 0 0 10px 10px;
 }
@@ -48,16 +48,6 @@ button {
 	border-radius: 10px;
 	max-width: 80%;
 	margin: auto;
-}
-
-#ac {
-	width: 310px;
-	height: 30px;
-}
-
-#equal {
-	width: 205px;
-	height: 30px;
 }
 
 sup {
