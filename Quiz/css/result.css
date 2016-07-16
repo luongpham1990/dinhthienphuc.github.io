@@ -1,0 +1,69 @@
+button {
+  position: relative;
+  border-radius: 20px;
+  margin: 180px 205px auto 205px;
+  transition: all 0.3s linear;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  opacity: 0.8;
+  animation: rotate paused;
+}
+
+img {
+  display: block;
+  vertical-align: middle;
+  width: 180px;
+  height: 55px;
+  border-radius: 20px;
+  border: 1px solid white;
+  transform: scale(1.1);
+}
+
+p {
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+  left: 35px;
+  bottom: -8px;
+}
+
+h1 {
+  font-size: 80px;
+  padding-top: 50px;
+  text-align: center;
+  opacity: 0.85;
+  animation: zoom 5s linear 1, changeColor 20s 5s linear infinite;
+}
+
+h2 {
+  color: #F7FE00;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+  opacity: 0.85;
+  animation: appear 8s linear 1;
+}
+
+@keyframes zoom {
+  from { transform: scale(0); color: white; }
+  to { transform: scale(1); color: #F7FE00; }
+}
+
+@keyframes appear {
+  0% { opacity: 0; }
+  80% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes changeColor {
+  0% { color: yellow; }
+  25% { color: green; }
+  50% { color: red; }
+  75% { color: blue; }
+  100% { color: yellow; }
+}

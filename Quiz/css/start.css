@@ -1,0 +1,36 @@
+img {
+	max-width: 300px;
+	display: block;
+	vertical-align: middle;
+	transform: scale(1.06);
+	border-radius: 10px;
+	transition: all 0.5s linear;
+}
+
+img:hover {
+	transform: scale(1.1);
+}
+
+button {
+	border-radius: 10px;
+	margin: auto 142px auto 142px;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+p {
+	padding-top: 70px;
+	text-align: center;
+	font-size: 50px;
+	font-style: italic;
+	font-weight: bolder;
+	color: #14D100;
+}
+
+i {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}

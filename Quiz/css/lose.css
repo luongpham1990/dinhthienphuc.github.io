@@ -1,0 +1,47 @@
+button {
+  position: relative;
+  border-radius: 20px;
+  margin: 239px 205px auto 205px;
+  transition: all 0.3s linear;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  opacity: 0.8;
+  animation: rotate paused;
+}
+
+img {
+  display: block;
+  vertical-align: middle;
+  width: 180px;
+  height: 55px;
+  border-radius: 20px;
+  border: 1px solid white;
+  transform: scale(1.1);
+}
+
+p {
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+  left: 35px;
+  bottom: -8px;
+}
+
+h1 {
+  font-size: 80px;
+  color: black;
+  padding-top: 50px;
+  text-align: center;
+  opacity: 0.85;
+  animation: appear 3s linear 1;
+}
+
+@keyframes appear {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
