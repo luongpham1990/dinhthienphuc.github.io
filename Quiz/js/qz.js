@@ -1,5 +1,5 @@
 var ques0 = {
-	content: "Fawkes gave not one feather but two. Who received the wands made from these feathers?",
+	content: "Who received the wands which is sibling with Harry's one?",
 	A: "Draco and Harry",
 	B: "Nevile and Harry",
 	C: "Voldemort and Harry",

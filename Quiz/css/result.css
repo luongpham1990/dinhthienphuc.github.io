@@ -1,57 +1,6 @@
-button {
-  position: relative;
-  border-radius: 20px;
-  margin: 180px 205px auto 205px;
-  transition: all 0.3s linear;
-}
-
-button:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  opacity: 0.8;
-  animation: rotate paused;
-}
-
-img {
-  display: block;
-  vertical-align: middle;
-  width: 180px;
-  height: 55px;
-  border-radius: 20px;
-  border: 1px solid white;
-  transform: scale(1.1);
-}
-
-p {
-  color: black;
-  font-size: 25px;
-  font-weight: bold;
-  position: absolute;
-  z-index: 1;
-  left: 35px;
-  bottom: -8px;
-}
-
-h1 {
-  font-size: 80px;
-  padding-top: 50px;
-  text-align: center;
-  opacity: 0.85;
-  animation: zoom 5s linear 1, changeColor 20s 5s linear infinite;
-}
-
-h2 {
-  color: #F7FE00;
-  font-size: 30px;
-  font-style: italic;
-  text-align: center;
-  opacity: 0.85;
-  animation: appear 8s linear 1;
-}
-
 @keyframes zoom {
-  from { transform: scale(0); color: white; }
-  to { transform: scale(1); color: #F7FE00; }
+  from { transform: scale(0); }
+  to { transform: scale(1); }
 }
 
 @keyframes appear {
@@ -60,10 +9,45 @@ h2 {
   100% { opacity: 1; }
 }
 
-@keyframes changeColor {
-  0% { color: yellow; }
-  25% { color: green; }
-  50% { color: red; }
-  75% { color: blue; }
-  100% { color: yellow; }
+@keyframes appearButton {
+  0% { opacity: 0; }
+  80% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+h1 {
+  font-size: 80px;
+  padding-top: 50px;
+  text-align: center;
+  opacity: 0.9;
+  animation: zoom 5s linear;
+}
+
+h2 {
+  color: white;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+  animation: appear 8s linear;
+}
+
+button {
+  color: white;
+  width: 180px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 30px 0px rgba(255, 255, 255, 0.75);
+  margin: 50px auto auto 409px;
+  transition: transform 500ms linear;
+  animation: appearButton 10s linear;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
