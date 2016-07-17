@@ -3,7 +3,7 @@
 #wrap {
 	max-width: 465px;
 	margin: auto;
-	border: 2px solid white;
+	border: 3px solid white;
 	padding: 5px;
 	border-radius: 10px;
 }
@@ -22,13 +22,14 @@ h1 {
 }
 
 .box {
-	padding: 10px; 
+	padding: 10px;	
 }
 
 input {
 	width: 330px;
 	height: 50px;
-	border-radius: 0 0 10px 10px;
+	border-radius: 5px;
+	border: 1px solid white;
 	font-size: 22px;
 }
 
@@ -38,7 +39,16 @@ button {
 	border-radius: 10px;
 	color: #EF1919;
 	font-style: italic;
+	opacity: 0.6;
 	font-size: 25px;
+	border: 1px solid white;
+	transition: opacity 200ms linear;
+}
+
+button:hover {
+	opacity: 1;
+	cursor: pointer;
+	background-color: white;
 }
 
 #field {
@@ -46,11 +56,10 @@ button {
 }
 
 #button {
-	border-radius: 10px;
-	max-width: 80%;
+	max-width: 85%;
 	margin: auto;
 }
 
 sup {
-	font-size: 8px;
+	font-size: 13px;
 }
