@@ -1,0 +1,89 @@
+* { box-sizing: border-box; }
+
+body {
+	background-image: url('../img/back4.jpg');
+}
+
+.wrap {
+	max-width: 1350px;
+}
+
+.grid {
+	margin-left: 10px;
+	margin-right: 10px; 
+}
+
+img {
+	width: 189px;
+	height: 259px;
+	border-radius: 10px;
+	margin: 5px;
+	border: 1px solid black;
+}
+
+.front .back {
+	width: 190px;
+	height: 260px;
+	border-radius: 10px;
+}
+
+.card {
+	position: relative;
+	float: left;
+	transition: all 0.3s linear;
+}
+
+.card .front {
+	transform: rotateY(180deg);
+}
+
+.card .back {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.card .front, .card .back {
+	transition: all 0.5s linear;
+	backface-visibility: hidden;
+}
+
+button {
+	position: fixed;
+	right: 20px;
+	font-size: 22px;
+	font-style: italic;
+	font-weight: bold;
+	top: 20px;
+	width: 110px;
+	height: 40px;
+	border-radius: 10px;
+	/*background-color: transparent;*/
+	color: white;
+	background-color: #663300;
+	border: 2px solid white;
+	box-shadow: 0px 6px 14px 0px rgba(255, 255, 255, 0.68);
+	transition: all 0.7s linear;
+}
+
+button:hover {
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
+.card:hover {
+	cursor: pointer;
+	transform: scale(1.03);
+}
+
+.hover-back {
+	transform: rotateY(180deg);
+}
+
+.hover-front {
+	transform: rotateY(0deg);
+}
+
+.hover-point {
+	cursor: pointer;
+}
