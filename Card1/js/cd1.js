@@ -28,6 +28,7 @@ $(document).ready( function() {
 	}
 
 	$('button').click( function() {
+		window.location.href = "../card1.html";
 		var newArr = shuffle(newArray());
 		for(var i = 0; i < newArr.length; i++) {
 			$('.front')[i].innerHTML = newArr[i];
