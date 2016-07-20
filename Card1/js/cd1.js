@@ -17,6 +17,23 @@ $(document).ready( function() {
 	return array;
 	}
 
+	$('button').click( function() {
+		$('.card .back').css('transform', 'rotateY(0deg)');
+		$('.card .front').css('transform', 'rotateY(180deg)');
+		setTimeout(popImgSrc, 1000);
+		// var newArr = shuffle(newArray());
+		// for(var i = 0; i < newArr.length; i++) {
+		// 	$('.front')[i].innerHTML = newArr[i];
+		// }
+	});
+
+	function popImgSrc() {
+		var newArr = shuffle(newArray());
+		for(var i = 0; i < newArr.length; i++) {
+			$('.front')[i].innerHTML = newArr[i];
+		}
+	}
+
 	function newArray() {
 		var arr = [];
 		var box = $('.front');
@@ -26,13 +43,6 @@ $(document).ready( function() {
 		}
 		return arr;		
 	}
-
-	$('button').click( function() {
-		var newArr = shuffle(newArray());
-		for(var i = 0; i < newArr.length; i++) {
-			$('.front')[i].innerHTML = newArr[i];
-		}
-	});
 
 	$('.card').click( function() {
 		$(this).children('.back').css('transform', 'rotateY(180deg)');
