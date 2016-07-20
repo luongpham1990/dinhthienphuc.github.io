@@ -28,7 +28,6 @@ $(document).ready( function() {
 	}
 
 	$('button').click( function() {
-		window.location.href = "https://dinhthienphuc.github.io/Card1/card1.html";
 		var newArr = shuffle(newArray());
 		for(var i = 0; i < newArr.length; i++) {
 			$('.front')[i].innerHTML = newArr[i];
@@ -39,6 +38,5 @@ $(document).ready( function() {
 		$(this).children('.back').css('transform', 'rotateY(180deg)');
 		$(this).children('.front').css('transform', 'rotateY(0deg)');	
 	});
-
 
 });
