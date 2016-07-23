@@ -1,0 +1,64 @@
+/** { box-sizing: border-box; }*/
+
+#wrap {
+	max-width: 1000px;
+	margin: auto;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url('../img/background.jpg');
+}
+
+p, h1 {
+	color: white;
+	font-family: "Courier New", Courier, monospace;
+}
+
+button {
+	font-family: "Courier New", Courier, monospace;
+}
+
+#theme {
+	width: 150px;
+	height: 35px;
+	margin-left: 149px;
+}
+
+@font-face {
+	font-family: myStyle;
+	src: url('../font/hemi head bd it.ttf');
+}
+
+.changeFont {
+	font-family: myStyle;
+	font-style: normal;
+}
+
+.changeButtonType {
+	width: 500px;
+	height: 35px;
+	border: 1px solid black;
+	border-radius: 10px;
+	font-size: 18px;
+	opacity: 0.9;
+	margin: 7px 0 7px 0;
+	transition: all 400ms linear;
+	margin: auto 50px auto -50px;
+}
+
+.changeBorder {
+	border-radius: 10px;
+	border: 1px solid white;
+}
+
+.changeTheme {
+	width: 300px;
+	height: 40px;
+	border: 2px solid white;
+	border-radius: 10px;
+	font-size: 22px;
+	transition: all 400ms linear;
+	margin: auto auto auto 338px;
+}

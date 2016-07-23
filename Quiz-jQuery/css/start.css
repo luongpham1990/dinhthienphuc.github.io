@@ -1,0 +1,36 @@
+h1 {
+	display: block;
+	text-align: center;
+	font-size: 50px;
+	font-style: italic;
+	margin-top: 115px;
+	text-transform: uppercase;
+	padding: 40px;
+	box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.75);
+	transition: all 0.5s linear;
+}
+
+h1:hover {
+	cursor: pointer;
+	transform: scale(1.02);
+}
+
+button {
+	color: white;
+	width: 220px;
+	height: 70px;
+	font-size: 25px;
+	font-weight: bold;
+	opacity: 0.5;
+	background-color: transparent;
+	transition: transform 500ms linear;
+	animation: appearButton 10s linear;
+	width: 220px;
+	height: 70px;
+	margin: 50px auto auto 389px;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 1;
+}
