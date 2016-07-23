@@ -1,6 +1,4 @@
 $(document).ready( function() {
-	document.getElementById('bg-music').play();
-
 	//Whenever reload page, shuffle cards
 	var arr = [];
 	var box = $('.front');
