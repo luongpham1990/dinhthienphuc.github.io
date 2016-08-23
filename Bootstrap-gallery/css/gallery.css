@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url('http://img.cdn.ved.com.vn/web/lmht360/wp-content/themes/_gameplay/images/bg-main.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+}
+.row img {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.row {
+    margin-top: 3%;
+}
+
+.container nav {
+    border-radius: 0 0 4px 4px;
+}
+
+.container .row > div > img {
+    border: 1px solid black;
+    border-radius: 4px;
+    transition: .5s ease;
+}
+
+.container .row > div > img:hover {
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+hr {
+    /*width: 70%;*/
+    /*font-size: 10px;*/
+    /*height: 5px;*/
+    color: black;
+}
+
+footer p {
+    text-align: center;
+}
